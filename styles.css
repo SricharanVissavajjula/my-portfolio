@@ -68,7 +68,7 @@ html, body {
 .hero {
     display: flex;
     flex-direction: column;
-    background-image: url("C:/Users/srich/OneDrive/Desktop/my portfolio/images/bg.png");
+    background-image: url("images/bg.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
