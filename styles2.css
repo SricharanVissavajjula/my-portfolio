@@ -1,0 +1,546 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #caf280;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.navbar:hover {
+    background: #caf280;
+}
+
+.navbar a {
+    color: #1500ff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.navbar a {
+    position: relative;
+    padding: 5px 0;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #1500ff; /* Border color */
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover::before {
+    width: 100%; /* Full width border on hover */
+}
+
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("C:/Users/srich/OneDrive/Desktop/my portfolio/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-container {
+    position: fixed;
+    top: 80px; /* Adjust this value as needed */
+    left: 40px; /* Adjust this value as needed */
+    z-index: 1000; /* Ensure it floats above other content */
+}
+
+.logo-container .logo {
+    width: 70px; /* Adjust the size of the logo as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+}
+
+.logo-container .logo:hover {
+    opacity: 1; /* Optional: Add a hover effect */
+}
+
+
+.hero-content {
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .button {
+    padding: 10px 20px;
+    background-color: #FFA12B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-content .button:hover {
+    background-color: #F78900;
+    transform: scale(1.05);
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* "Hire Me" Button */
+.hire-me-button {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.hire-me-button a {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #FFA12B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hire-me-button a:hover {
+    background-color: #F78900;
+}
+
+/* Section Styles */
+/* About Me Section */
+#about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'SF UI Text', sans-serif;
+    background-color: #caf280;
+    text-align: left;
+    color: #000000;
+}
+
+#about-me h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    color: #1500ff; /* Yellow color for the "About Me" title */
+}
+
+.about-me-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.description strong {
+    color: #1500ff; /* Yellow color for the emphasized text */
+    font-weight: bold;
+}
+
+
+/* Education Section */
+#education {
+    padding: 60px 20px;
+    font-size: 2.5rem;
+    color: #caf280;
+    background-color: #4631d4;
+    text-align: center;
+}
+
+#education h2 {
+    margin-bottom: 20px;
+}
+
+.education-list {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.education-list li {
+    background-color: #4631d4;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-list h3 {
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color: #caf280;
+}
+
+.education-list p {
+    margin: 5px 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+    background-color: #caf280;
+    font-size: 2.5rem;
+    color: #1500ff;
+    text-align: center;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #4631d4;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #caf280;
+}
+
+.project-info p {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
+    background-color: #4631d4;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #caf280;
+}
+
+#skills h2 {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background-color: #caf280d4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.333% - 20px);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #003BB5;
+}
+
+.skill-item p {
+    color: #2b00ff;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #caf284;
+    color: #1500ff;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    color: #1500ff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #FFA12B;
+}
+
+.connect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1500ff;
+    color: #caf284;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.connect-button:hover {
+    background-color: #caf284;
+    color: #1500ff;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #003BB5;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #FFA12B;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* About Me Section */
+    #about-me h2 {
+        font-size: 2.5rem;
+        margin-left: 20px;
+    }
+
+    .about-me-content {
+        font-size: 1rem;
+    }
+
+    /* Education Section */
+    #education h2 {
+        font-size: 2.5rem;
+    }
+
+    .education-list h3 {
+        font-size: 1.5rem;
+    }
+
+    .education-list p {
+        font-size: 1rem;
+    }
+
+    /* Projects Section */
+    #projects h2 {
+        font-size: 2.5rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-info p {
+        font-size: 1.2rem;
+    }
+
+    /* Skills Section */
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        flex-basis: auto;
+        width: 90%;
+    }
+
+    /* Contact Section */
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .connect-button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar */
+    .navbar {
+        padding: 8px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    /* About Me Section */
+    #about-me h2 {
+        font-size: 2rem;
+    }
+
+    /* Education Section */
+    #education h2 {
+        font-size: 2rem;
+    }
+
+    .education-list h3 {
+        font-size: 1.2rem;
+    }
+
+    .education-list p {
+        font-size: 0.9rem;
+    }
+
+    /* Projects Section */
+    #projects h2 {
+        font-size: 2rem;
+    }
+
+    .project-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-info p {
+        font-size: 1rem;
+    }
+
+    /* Skills Section */
+    .skill-item {
+        width: 100%;
+    }
+
+    /* Contact Section */
+    .connect-button {
+        padding: 6px 12px;
+    }
+}
