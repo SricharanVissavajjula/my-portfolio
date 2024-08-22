@@ -131,7 +131,7 @@ html, body {
 }
 
 .hero-image img {
-    max-width: 50%;
+    max-width: 50% !important;
     height: auto;
     border-radius: 10px;
 }
