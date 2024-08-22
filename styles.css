@@ -329,166 +329,47 @@ html, body {
     transform: translateY(-5px);
 }
 
-.skill-item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #003BB5;
-}
-
-.skill-item p {
-    color: #2b00ff;
-}
-
-/* Contact Section */
-#contact {
-    padding: 60px 20px;
-    background-color: #caf284;
-    color: #1500ff;
-    text-align: center;
-}
-
-#contact h2 {
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 20px;
-}
-
-.contact-info a {
-    color: #1500ff;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-    color: #FFA12B;
-}
-
-.connect-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #1500ff;
-    color: #caf284;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.connect-button:hover {
-    background-color: #caf284;
-    color: #1500ff;
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    background-color: #003BB5;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #FFA12B;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    /* Navbar */
-    .navbar {
-        flex-direction: row;
-        padding: 10px;
-    }
-
-    .navbar a {
-        margin: 5px 0;
-        font-size: 1.2rem;
-    }
-
-    /* Hero Section */
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    /* About Me Section */
-    #about-me h2 {
-        font-size: 2.5rem;
-        margin-left: 20px;
-    }
-
-    .about-me-content {
-        font-size: 1rem;
-    }
-
-    /* Education Section */
-    #education h2 {
-        font-size: 2.5rem;
-    }
-
-    .education-list h3 {
-        font-size: 1.5rem;
-    }
-
-    .education-list p {
-        font-size: 1rem;
-    }
-
-    /* Projects Section */
-    #projects h2 {
-        font-size: 2.5rem;
-    }
-
-    .project-info h3 {
-        font-size: 1.5rem;
-    }
-
-    .project-info p {
-        font-size: 1.2rem;
-    }
-
-    /* Skills Section */
-    .skills-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .skill-item {
-        flex-basis: auto;
-        width: 90%;
+        flex-basis: 100%;
+        margin: 10px 0;
+        max-width: 300px;
     }
 
     /* Contact Section */
+    #contact h2 {
+        font-size: 2rem;
+    }
+
     .contact-info {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+    }
+
+    .contact-info a {
+        font-size: 1rem;
     }
 
     .connect-button {
-        padding: 8px 16px;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer a {
+        font-size: 1rem;
+        margin: 5px 0;
     }
 }
 
+/* Media Queries for smaller devices */
 @media (max-width: 480px) {
     /* Navbar */
     .navbar {
-        padding: 8px;
+        padding: 5px;
     }
 
     .navbar a {
@@ -509,6 +390,10 @@ footer a:hover {
         font-size: 2rem;
     }
 
+    .about-me-content {
+        font-size: 0.9rem;
+    }
+
     /* Education Section */
     #education h2 {
         font-size: 2rem;
@@ -537,11 +422,37 @@ footer a:hover {
 
     /* Skills Section */
     .skill-item {
-        width: 100%;
+        flex-basis: 100%;
+        margin: 5px 0;
+        max-width: 250px;
     }
 
     /* Contact Section */
+    #contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-info a {
+        font-size: 0.9rem;
+    }
+
     .connect-button {
-        padding: 6px 12px;
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px 5px;
+    }
+
+    footer a {
+        font-size: 0.9rem;
+        margin: 5px 0;
     }
 }
