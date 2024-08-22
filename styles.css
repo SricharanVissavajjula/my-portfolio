@@ -17,6 +17,7 @@ html, body {
 .navbar {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     background: #caf280;
     padding: 15px 30px;
     position: fixed;
